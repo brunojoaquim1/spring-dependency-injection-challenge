@@ -23,3 +23,39 @@ Implementar dois serviços (`OrderService` e `ShippingService`) que trabalham em
 - A partir de **200.00** → frete = **0.00**  
 
 ### OrderService — cálculo total  
+- total = (valor básico - desconto) + frete
+
+
+---
+
+## 🛠️ Tecnologias utilizadas  
+- **Java 17+**  
+- **Spring Boot**  
+- **Injeção de Dependência (@Service, @Autowired/Construtor)**  
+
+---
+## 📂 Estrutura do projeto
+
+```text
+src
+└── main
+    └── java
+        └── com.example.demo
+            ├── domain
+            │   └── Order.java
+            └── service
+                ├── OrderService.java
+                └── ShippingService.java
+
+```
+
+---
+
+## 💡 Conceitos praticados  
+- Separação de responsabilidades entre classes  
+- Criação de componentes Spring com `@Service`  
+- Injeção de dependência por construtor  
+- Evitar estado em beans singleton  
+- Boas práticas de design (cohesão e baixo acoplamento)  
+
+
